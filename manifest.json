@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Timezone Helper Pro",
+    "version": "1.0.0",
+    "description": "Global timezone viewer for remote workers",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": ["storage", "alarms"],
+    "icons": {
+      "128": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "toggle-dark-mode": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+D",
+          "mac": "Command+Shift+D"
+        },
+        "description": "Toggle dark mode"
+      },
+      "toggle-clock-style": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+S",
+          "mac": "Command+Shift+S"
+        },
+        "description": "Toggle clock style"
+      },
+      "open-search": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "Command+Shift+F"
+        },
+        "description": "Focus search input"
+      }
+    }
+  }
